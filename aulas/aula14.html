@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        p{
+            text-transform: uppercase;/*deixa todo o texto maiusculo*/
+            text-indent: 50px;/*espaço na primeira linha*/
+            letter-spacing: 10px;/*espaço entre as letras*/
+            line-height: 3;/*espaço entre as letras*/
+            direction: rtl;/* direção do texto*/
+            word-spacing: 20px;/*espaço entre as palavras*/
+            text-align-last: center;/*controla a ultima linha do texto*/
+        }
+        div{
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+            white-space: nowrap;/*serve para as linhas não quebrarem o espaço quando acabar o espaço*/
+            overflow: hidden;/*controla os elementos que estão no vacuo/ou no nada*/
+            word-break: break-all;/*quebra as palavas quando necessario*/
+        }
     </style>
 </head>
 <body>
-    <a href="https://www.youtube.com/">Youtube</a>
-    <a href="https://telegram.org/">Telegram</a>
-    <a href="https://www.reddit.com/">Reddit</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur in corporis architecto laboriosam deleniti error sequi excepturi, fuga recusandae itaque optio nam? Veniam sunt praesentium saepe quasi non rerum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, hic. Aut perferendis voluptatum est autem molestiae harum quibusdam labore possimus libero distinctio ad, iste itaque cupiditate. Aspernatur sequi eaque ratione!</p>
+
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus quasi temporibus sunt fuga nulla, aperiam placeat eius vero iure officia laudantium at architecto? Quam facilis natus doloribus provident qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nulla sapiente veniam laboriosam alias, laudantium sint facilis, eius similique perferendis quibusdam? Dicta, voluptatum aspernatur. Impedit, dignissimos. Qui officiis id tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore perferendis, alias laudantium similique exercitationem aspernatur voluptates nemo cum veniam, porro numquam quas at ut ratione autem. Distinctio, id optio.
+    </div>
 </body>
 </html>

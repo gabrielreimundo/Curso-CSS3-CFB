@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformações-2D</title>
+    <style>
+         #dv1{
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            border: 1px solid black;
+            /*transform: translate(200px,0px);/*faz a div se mover :D*/
+            transition: transform 0.5s;
+        }
+        #dv1:active{
+            transform: rotate(45deg);
+        }
+        #dv2{
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            border: 1px solid black;
+            /*transform: translate(200px,0px);/*faz a div se mover :D*/
+            transition: transform 0.5s;
+        }
+        #dv2:active{
+            transform: translate(100px, 0px);
+        }
+        #dv3{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 1px solid black;
+            /*transform: translate(200px,0px); faz a div se mover :D*/
+            /*transform: rotate(45deg); faz a div rodar, deg = graus*/
+            transition: transform 0.5s;
+        }
+        #dv3:active{
+            transform: scale(2);
+        }
+        #dv4{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 1px solid black;
+            /*transform: translate(200px,0px); faz a div se mover :D*/
+            /*transform: rotate(45deg); faz a div rodar, deg = graus*/
+            /*transform: scale(2); faz aumentar o tamanho*/
+            transition: transform 0.5s;
+        }
+        #dv4:active{
+            transform: skewX(50deg);
+        }
+        #dv5{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 1px solid black;
+            /*transform: translate(200px,0px); faz a div se mover :D*/
+            /*transform: rotate(45deg); faz a div rodar, deg = graus*/
+            /*transform: scale(2); faz aumentar o tamanho*/
+            /*transform: skewX(50deg); faz ele se inclinar*/
+            transition: transform 0.5s;
+        }
+        #dv5:active{
+            transform: skewY(50deg);
+        }
+        #dv6{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 1px solid black;
+            text-align: right;
+            /*transform: translate(200px,0px); faz a div se mover :D*/
+            /*transform: rotate(45deg); faz a div rodar, deg = graus*/
+            /*transform: scale(2); faz aumentar o tamanho*/
+            /*transform: skewX(50deg); faz ele se inclinar*/
+            /*transform: skewY(50deg);*/
+            transition: transform 0.5s;
+        }
+        #dv6:active{
+            transform: skew(60deg, 60deg) rotate(45deg);
+        }
+        #dv7{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 1px solid black;
+            transition: transform 0.5s;
+            transform-origin:100% 100%;/*muda o ponto de origem*/
+            transform: rotate(0deg);
+        }
+        #dv7:active{
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="dv1">
+        CFB         
+    </div>
+    <div id="dv2">
+        CFB         
+    </div>
+    <div id="dv3">
+        CFB         
+    </div>
+    <div id="dv4">
+        CFB         
+    </div>
+    <div id="dv5">
+        CFB         
+    </div>
+    <div id="dv6">
+        CFB         
+    </div>
+    <div id="dv7">
+        CFB
+    </div>
+</body>
+</html>

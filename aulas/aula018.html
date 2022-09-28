@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transformação-3D</title>
     <style>
+        body{
+            perspective: 800px;/* da um efeito de profundidade */
+        }
         #dv1 {
             background-color: blueviolet;
             width: 200px;
             height: 200px;
+            margin: 300px;
             border: 1px solid black;
+            backface-visibility: visible;/*server para determinar se a parte de traz da div vai aparecer ou nn*/
             transform: rotateY(0deg);
-            transition: 0.5s;
+            transition: 1.5s;
+            transform-origin: 0px 0px;
         }
         #dv1:active{
-            transform: rotateY(180deg);
+            transform: rotateY(360deg);
         }
     </style>
 </head>

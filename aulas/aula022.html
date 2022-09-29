@@ -11,11 +11,33 @@
             background-color: tomato;
             width: 200px;
             height: 200px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+
+        }/*display table-cell faz com que a div se comporte como uma celula de uma tabela, como um td, assim podendo aplicar propriedades diferentes*/
+
+        ol,ul,li {
+            border: 1px solid black;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        ol{
+            margin-top: 20px;
+            display: table;
+            width: 300px;
+        }
+        ul{
+            display: table-row;
+        }
+        li{
             display: table-cell;
             text-align: center;
-            vertical-align: middle;
-        }/*display table-cell faz com que a div se comporte como uma celula de uma tabela, como um td, assim podendo aplicar propriedades diferentes*/
-          
+        } 
+        .titulo{
+            background-color: turquoise;
+        }
     </style>
 </head>
 <body>
@@ -24,7 +46,7 @@
         DIV
     </div>
     <ol>
-        <ul>
+        <ul class="titulo">
             <li>Cor</li>
             <li>Forma</li>
             <li>Objeto</li>

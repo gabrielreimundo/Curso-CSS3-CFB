@@ -6,10 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        /*POSITION e Z-INDEX*/
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            border: 1px solid #000;
+            background-color: #ddd;
+        }
+        #d0{
+            width: 700px;
+            height: 500px;
+            background: #eef;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        #d1, #d2{
+            width: 300px;
+            height: 150px;
+        }
+        #d1 {
+            position: static;
+        }
+        #d2{
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        /*position static = padrão
+
+          position abolute = permite que nos possamos definir a posição do elemento atravez de top e left.
+
+          absolute funciona em relação ao conteiner em que o elemento esta dentro.
+
+          o relative é posicionado em relação ao elemento anterior, desde que esse elemento esteja em static (modo padrão), caso contrario ele se alinhara de acordo com o conteiner no qual esta dentro.
+          neste exemplo o anterior de d2 é o d1  
+          
+          position fixed = este se alinha de acordo com o body
+
+          z-index = serve para controlar a ordem de empilhamento das divs que estao uma em cima da outra  atravez de valores como 1 e 2
+        */
     </style>
 </head>
 <body>
-    
+    <div id="d0">
+        <div id="d1">Canal Fessor Bruno - Curso de CSS</div>
+        <div id="d2">Baixe as apostilas pelo site cfbcursos.com.br</div>
+    </div>
 </body>
 </html>

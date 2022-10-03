@@ -7,10 +7,18 @@
     <title>Document</title>
     <style>
         /*after, before */
-
+        p{
+            font-size: 40px;
+        }
+        p::before {
+            content: url('../image/mqdefault.jpg');
+        }
+        p::after{
+            content: "-cfb";
+        }
     </style>
 </head>
 <body>
-    
+    <p>Burzum</p>
 </body>
 </html>

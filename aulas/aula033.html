@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*ANIMATION*/
+       @keyframes anima {
+            from{
+                top:500px;
+            }
+            to{
+                top:0px;
+            }
+       }
+       @keyframes anima2 {
+            from{
+                left: 0;
+            }
+            to{
+                left: 500px;
+            }
+       }
+       @keyframes anima3 {
+            from{
+                top: 0px; left: 500px; 
+            }
+            to{
+                top: 500px; left: 500px;
+            }
+       }
+       @keyframes anima4 {
+            from{
+                top: 500px; left: 500px;
+            }
+            to{
+                top:500px; left: 0px;
+            }
+       }
+        p{  
+            position: relative;
+            width: 260px;
+            height: 260px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            animation-name:anima,anima2,anima3,anima4;
+            animation-duration: 3s;
+            animation-delay: 0s,3s,6s,9s;  
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic mollitia illum cupiditate eligendi sint laborum culpa ratione alias quibusdam impedit, necessitatibus facere est inventore placeat consequatur ipsa non molestiae!</p>
+</body>
+</html>

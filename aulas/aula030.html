@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        p{
+            font-size: 30px;
+        }
+        p::first-letter{
+            /*formatação para a primeira letra*/
+            font-size: 40px;
+            color: red;
+        }
+        .lorem::first-line{
+            color: rgb(189, 13, 224);
+            text-decoration: underline;
+            background-color: rgba(133, 2, 255, 0.548);
+        }
+        ::selection{
+            color: white;
+            background-color: black;
+        }
     </style>
 </head>
 <body>
-    
+    <p>Canal Fessor Bruno - Curso de CSS</p>
+    <P>Canal Fessor Bruno - Curso de CSS</P>
+    <P>Canal Fessor Bruno - Curso de CSS</P>
+
+    <div >Canal Fessor Bruno</div>
+
+
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis dolorem, iste accusantium blanditiis culpa eveniet esse quidem et ratione eos est, sed dicta, earum eum tempora. Facilis, accusantium aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab minus, facere a earum ut repellat dignissimos eligendi doloremque ea est velit suscipit. Dolore, repellendus sapiente! Quaerat ipsa qui et.</p>
 </body>
 </html>

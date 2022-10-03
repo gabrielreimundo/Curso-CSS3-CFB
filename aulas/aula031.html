@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*TRANSITION
+         a diferença de transition para animation é que o transitio precisa de um gatilho, ou um disparador, por exemplo um hover ou um active
+        */
+        P{
+            width: 300px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            transition: width 2s, height 2s, background-color 1s, color 1s;
+            transition-timing-function: cubic-bezier(1,0.5,1,0.5);
+        }/*transition timing function controla o time do transition ou a aceleração
+           ease = padrão 
+           ease-in = começa devagar termina rapido
+           ease-out = começa rapido e termina devagar
+           linear = velocidade constante
+        */
+        p:hover{
+            width: 500px;
+            height: 120px;
+            background-color: #f00;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, impedit. Velit, voluptatum! Ex, illum laudantium, aspernatur architecto inventore ipsa excepturi quam tenetur, commodi sapiente ducimus deleniti consequuntur quo perferendis nisi.</P>
+</body>
+</html>

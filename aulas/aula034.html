@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anima {
+            0%{top:500px;}
+            14%{top:0px; background-color: brown;}
+            28%{top: 0px;left: 0; background-color: brown;}
+            42%{top: 0px;left: 500px; background-color:blueviolet;}
+            57%{top: 0px; left: 500px; background-color:blueviolet;}
+            71%{top: 500px; left: 500px; background-color: cadetblue;}
+            85%{top: 500px; left: 500px; background-color: cadetblue;}
+           100%{top:500px; left: 0px; background-color:darkorange;}
+        }
+
+
+        p{  
+            color: aliceblue;
+            position: relative;
+            background-color: darkorange;
+            top: 500px;
+            width: 260px;
+            height: 260px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            transition: 0.5s;
+            animation-name:anima;
+            animation-duration: 8s;
+            animation-delay:0s;
+            animation-iteration-count: infinite; 
+            animation-direction: normal;
+        }/* animation-iteration-count: infinite; = para fazer a animação ficar em loop infinito
+            animation-direction = serve para mudar a direção da animação
+        */
+        p:active{
+            animation-play-state: paused;
+        }
+        body{
+            background-color: rgb(22, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic mollitia illum cupiditate eligendi sint laborum culpa ratione alias quibusdam impedit, necessitatibus facere est inventore placeat consequatur ipsa non molestiae!</p>
+</body>
+</html>
